@@ -1,0 +1,88 @@
+  /* Grundstyles */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto Mono', monospace;
+      background: #0f111a;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+  }
+
+  form {
+      background: #1a1f36;
+      border-radius: 12px;
+      padding: 30px 40px;
+      width: 100%;
+      max-width: 480px;
+      box-shadow: 0 0 15px #2c3e8f88;
+  }
+
+  label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #89aaff;
+      font-size: 1.1rem;
+      letter-spacing: 0.03em;
+  }
+
+  input[type="text"] {
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 8px;
+      border: 2px solid #32475f;
+      background-color: #0f111a;
+      color: #ffffff;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+  }
+
+  input[type="text"]:focus {
+      outline: none;
+      border-color: #89aaff;
+      box-shadow: 0 0 8px #89aaffaa;
+      background-color: #131722;
+  }
+
+  button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+      border: none;
+      border-radius: 10px;
+      color: #e0e7ff;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      letter-spacing: 0.05em;
+  }
+
+  button:hover {
+      background: linear-gradient(90deg, #617bff, #3f4c99);
+      box-shadow: 0 0 15px #617bffcc;
+  }
+
+  /* Antwortbox */
+  .response-box {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #1e2348;
+      border-radius: 12px;
+      box-shadow: 0 0 12px #3f4c99cc;
+      color: #ffffff;
+      font-size: 1rem;
+      white-space: pre-wrap;
+      line-height: 1.5;
+      border: 1.5px solid #ffffffaa;
+  }
+
+  strong {
+      color: #5a1f1f;
+  }
