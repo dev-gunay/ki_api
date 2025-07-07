@@ -3,6 +3,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $api_key = $_ENV['api_key']; // habe ihn gerade offline gestellt, gehe auf die webseite um es wieder zu aktivieren
     $url = 'https://router.huggingface.co/cohere/compatibility/v1/chat/completions';
 
+    echo "dein api key == $api_key";
+    echo "hallo";
+
     // Die Nutzereingabe
     $user_message = $_POST['message'];  // wenn per Formular gesendet
     // $user_answer = $_POST['response'];
