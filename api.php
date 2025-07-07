@@ -1,10 +1,17 @@
 <?php
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv->load();
+
+
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $api_key = $_ENV['api_key']; // habe ihn gerade offline gestellt, gehe auf die webseite um es wieder zu aktivieren
     $url = 'https://router.huggingface.co/cohere/compatibility/v1/chat/completions';
 
-    echo "dein api key == $api_key";
-    echo "hallo";
+    // echo "dein api key = $api_key";  <--- (Fehlerbehebung)
 
     // Die Nutzereingabe
     $user_message = $_POST['message'];  // wenn per Formular gesendet
