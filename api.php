@@ -44,8 +44,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $antwort_text = "Keine Antwort vom Server erhalten.";
     }
-
-    // if
 }
 ?>
 
