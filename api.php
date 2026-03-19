@@ -8,7 +8,7 @@ $dotenv->load();
 
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $api_key = $_ENV['api_key']; // habe ihn gerade offline gestellt, gehe auf die webseite um es wieder zu aktivieren
+    $api_key = $_ENV['api_key']; // (gerade Offline)
     $url = 'https://router.huggingface.co/cohere/compatibility/v1/chat/completions';
 
 
